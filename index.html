@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Erllon Valente — Engenharia de Dados & BI</title>
+<meta name="description" content="Portfólio de Erllon Valente: engenharia de dados, Oracle, BI, Python, Rust e DevOps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0f14; --surface:#121821; --border:#1f2a37; --text:#e6edf3; --muted:#8b98a7;
+    --accent:#4ade80; --accent2:#38bdf8;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f7f9fb; --surface:#ffffff; --border:#e2e8f0; --text:#0f172a; --muted:#526075; --accent:#16a34a; --accent2:#0284c7; }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+  a{color:var(--accent2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:10}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  .logo{font-family:"JetBrains Mono",monospace;font-weight:600;color:var(--text)}
+  .logo span{color:var(--accent)}
+  nav ul{display:flex;gap:20px;list-style:none;font-size:.95rem}
+  nav ul a{color:var(--muted)}
+  header{padding:96px 0 72px}
+  .tag{font-family:"JetBrains Mono",monospace;color:var(--accent);font-size:.95rem;margin-bottom:12px}
+  h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;font-weight:800;letter-spacing:-.02em}
+  h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);font-size:1.15rem;max-width:640px;margin-top:20px}
+  .cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;border:1px solid var(--border);color:var(--text)}
+  .btn.primary{background:var(--accent);color:#06210f;border-color:var(--accent)}
+  .btn:hover{text-decoration:none;opacity:.9}
+  section{padding:56px 0;border-top:1px solid var(--border)}
+  h2{font-size:1.6rem;margin-bottom:24px}
+  h2::before{content:"# ";color:var(--accent);font-family:"JetBrains Mono",monospace}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:22px}
+  .card h3{font-size:1.08rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{font-family:"JetBrains Mono",monospace;font-size:.78rem;padding:3px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+  .skills .card h3{color:var(--accent)}
+  .about p{color:var(--muted);max-width:720px;margin-bottom:14px}
+  footer{padding:40px 0;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  @media (max-width:600px){ nav ul{gap:14px;font-size:.85rem} header{padding:64px 0 48px} }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">erllon<span>.dev</span></a>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <p class="tag">&gt; olá, eu sou</p>
+    <h1>Erllon Valente<br><span class="grad">Engenharia de Dados &amp; BI</span></h1>
+    <p class="lead">Construo pipelines de dados, data warehouses em Oracle e painéis de BI que transformam dados operacionais em decisões. Gosto de automatizar tudo que se repete — com Python, Rust e boas práticas de DevOps.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projetos">Ver projetos</a>
+      <a class="btn" href="https://github.com/erllon-prog" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="sobre" class="about">
+  <div class="wrap">
+    <h2>Sobre</h2>
+    <p>Sou de Lins, São Paulo, e atuo com dados no setor agroindustrial: da extração em sistemas como SAP e APIs externas até o modelo dimensional no DW e a visualização final no Power BI.</p>
+    <p>Meu foco é entregar dados confiáveis e atualizados automaticamente — orquestração de cargas, modelagem com dbt, automações em Python e infraestrutura que roda sem precisar de babá.</p>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>Engenharia de Dados</h3><p>Pipelines ETL/ELT, modelagem dimensional, cargas incrementais e integração com APIs.</p>
+        <div class="chips"><span class="chip">dbt</span><span class="chip">Talend</span><span class="chip">SQL</span><span class="chip">APIs REST</span></div></div>
+      <div class="card"><h3>Oracle</h3><p>Data warehouse, PL/SQL, modelagem de fatos e dimensões, Oracle APEX.</p>
+        <div class="chips"><span class="chip">PL/SQL</span><span class="chip">APEX</span><span class="chip">DW</span></div></div>
+      <div class="card"><h3>BI</h3><p>Painéis executivos e operacionais, Power Query, DAX e modelos performáticos.</p>
+        <div class="chips"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query</span><span class="chip">Superset</span></div></div>
+      <div class="card"><h3>Python</h3><p>Automação, integração de dados e web automation.</p>
+        <div class="chips"><span class="chip">pandas</span><span class="chip">Playwright</span><span class="chip">requests</span></div></div>
+      <div class="card"><h3>Rust</h3><p>Ferramentas de linha de comando rápidas e seguras para processamento de dados.</p>
+        <div class="chips"><span class="chip">cargo</span><span class="chip">CLI</span></div></div>
+      <div class="card"><h3>DevOps</h3><p>Orquestração de jobs, serviços Windows, versionamento e deploy.</p>
+        <div class="chips"><span class="chip">Rundeck</span><span class="chip">Git</span><span class="chip">NSSM</span><span class="chip">CI/CD</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="wrap">
+    <h2>Projetos</h2>
+    <div class="grid">
+      <div class="card"><h3>Integração Trello → Oracle DW</h3><p>Sincronização de cards, checklists e itens via API do Trello para o data warehouse, alimentando painéis de acompanhamento de demandas.</p>
+        <div class="chips"><span class="chip">Python</span><span class="chip">Trello API</span><span class="chip">Oracle</span></div></div>
+      <div class="card"><h3>Exportação automática de relatórios</h3><p>Automação com Playwright que exporta relatórios diários do Power BI em PDF, agrupados por páginas, sem intervenção manual.</p>
+        <div class="chips"><span class="chip">Python</span><span class="chip">Playwright</span><span class="chip">Power BI</span></div></div>
+      <div class="card"><h3>Carga de dados SAP com dbt</h3><p>Modelos dbt que carregam e tratam dados de materiais do SAP no DW Oracle, com orquestração agendada.</p>
+        <div class="chips"><span class="chip">dbt</span><span class="chip">SAP</span><span class="chip">Oracle</span></div></div>
+      <div class="card"><h3>Orquestração com Rundeck</h3><p>Implantação e migração do Rundeck em Windows como serviço, centralizando a execução de jobs Talend, dbt e Python.</p>
+        <div class="chips"><span class="chip">Rundeck</span><span class="chip">NSSM</span><span class="chip">DevOps</span></div></div>
+      <div class="card"><h3>Painéis de BI corporativos</h3><p>Dashboards de custos (orçado x realizado), suprimentos, manutenção preventiva, RH e operações agrícolas.</p>
+        <div class="chips"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Oracle</span></div></div>
+      <div class="card"><h3>Avaliação do Apache Superset</h3><p>Projeto piloto para avaliar o Superset como alternativa open source de visualização de dados.</p>
+        <div class="chips"><span class="chip">Superset</span><span class="chip">Python</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <h2>Contato</h2>
+    <p style="color:var(--muted);max-width:640px">Quer conversar sobre dados, BI ou automação? Me encontre no GitHub.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/erllon-prog" target="_blank" rel="noopener">github.com/erllon-prog</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y"></span> Erllon Valente</span>
+    <span class="logo">erllon<span>.dev</span></span>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
